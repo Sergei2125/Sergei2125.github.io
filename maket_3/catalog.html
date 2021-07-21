@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta name="msapplication-TileColor" content="#006BAD" />
+    <meta name="theme-color" content="#006BAD" />
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Diplom</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css" />
+  </head>
+  <body class="catalogPage">
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header">
+            <a class="header__menu" href="index.html">
+              <svg class="icon icon--menu">
+                <use xlink:href="./assets/imgs/sprite.svg#menu"></use></svg></a
+            ><a class="header__logo" href="index.html">
+              <svg class="icon logo">
+                <use
+                  xlink:href="./assets/imgs/sprite.svg#headerLogo"
+                ></use></svg
+            ></a>
+            <div class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="about.html">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link activePage" href="catalog.html"
+                    >Каталог</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__icon">
+              <a class="header__heart" href="#">
+                <svg class="icon icon--heart">
+                  <use
+                    xlink:href="./assets/imgs/sprite.svg#heart"
+                  ></use></svg></a
+              ><a class="header__search" href="#">
+                <svg class="icon icon--search">
+                  <use
+                    xlink:href="./assets/imgs/sprite.svg#search"
+                  ></use></svg></a
+              ><a class="header__cart" href="#">
+                <svg class="icon icon--cart">
+                  <use xlink:href="./assets/imgs/sprite.svg#shoppingCart"></use>
+                </svg>
+                <div class="main"></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="catalog">
+        <div class="container">
+          <p class="catalog__bread">Ювелирные украшения / Кольца</p>
+          <h2 class="h2 catalog__title">Кольца</h2>
+          <h2 class="h2 catalog__title--mobile">Каталог</h2>
+          <div class="new-catalog__nav catalog-menu--mobile">
+            <ul class="new-catalog__nav">
+              <li class="new-catalog__item">
+                <a class="new-catalog__link activeclick" href="#">Кольца</a>
+              </li>
+              <li class="new-catalog__item">
+                <a class="new-catalog__link" href="#">Серьги</a>
+              </li>
+              <li class="new-catalog__item">
+                <a class="new-catalog__link" href="#">Подвески</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-menu">
+            <div class="catalog-menu__inner">
+              <div class="catalog-menu__title">Категория</div>
+              <form class="catalog-menu__items">
+                <label class="catalog-menu__item">
+                  <input
+                    class="catalog-menu__input"
+                    type="checkbox"
+                    checked
+                  /><span class="catalog-menu__text">Кольца</span>
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Серьги</span
+                  >
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Подвески</span
+                  >
+                </label>
+              </form>
+            </div>
+            <div class="catalog-menu__inner">
+              <div class="catalog-menu__title">Материал</div>
+              <form class="catalog-menu__items">
+                <label class="catalog-menu__item">
+                  <input
+                    class="catalog-menu__input"
+                    type="checkbox"
+                    checked
+                  /><span class="catalog-menu__text">Золото</span>
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Серебро</span
+                  >
+                </label>
+              </form>
+            </div>
+            <div class="catalog-menu__inner">
+              <div class="catalog-menu__title">Вставка</div>
+              <form class="catalog-menu__items">
+                <label class="catalog-menu__item">
+                  <input
+                    class="catalog-menu__input"
+                    type="checkbox"
+                    checked
+                  /><span class="catalog-menu__text">Бриллиант</span>
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Сапфир</span
+                  >
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Изумруд</span
+                  >
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Рубин</span
+                  >
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Топаз</span
+                  >
+                </label>
+              </form>
+            </div>
+            <div class="catalog-menu__inner">
+              <div class="catalog-menu__title">Проба</div>
+              <form class="catalog-menu__items">
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >585</span
+                  >
+                </label>
+                <label class="catalog-menu__item">
+                  <input
+                    class="catalog-menu__input"
+                    type="checkbox"
+                    checked
+                  /><span class="catalog-menu__text">750</span>
+                </label>
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >925</span
+                  >
+                </label>
+              </form>
+            </div>
+            <div class="catalog-menu__inner">
+              <div class="catalog-menu__title">Наличие</div>
+              <form class="catalog-menu__items">
+                <label class="catalog-menu__item">
+                  <input class="catalog-menu__input" type="checkbox" /><span
+                    class="catalog-menu__text"
+                    >Есть в наличии</span
+                  >
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="catalog-sort">
+            <span class="catalog-sort__title">Сортировать по:</span>
+            <form class="catalog-sort__items">
+              <label class="catalog-sort__item">
+                <input class="catalog-sort__input" type="checkbox" /><span
+                  class="catalog-sort__text"
+                  >По пулярности</span
+                >
+              </label>
+              <svg class="icon catalog-sort__item--menu">
+                <use xlink:href="./assets/imgs/sprite.svg#menu"></use>
+              </svg>
+              <label class="catalog-sort__item">
+                <input class="catalog-sort__input" type="checkbox" /><span
+                  class="catalog-sort__text"
+                  >По новизне</span
+                >
+              </label>
+              <label class="catalog-sort__item">
+                <input class="catalog-sort__input" type="checkbox" /><span
+                  class="catalog-sort__text"
+                  >По цене</span
+                >
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="catalog-product">
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring005.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">12 990 ₽</div>
+                  <div class="card__oldPrace">28 800 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Помолвочное кольцо из белого золота с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 0,94 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring006.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">20 450 ₽</div>
+                  <div class="card__oldPrace">36 450 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 1,85 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring007.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">18 750 ₽</div>
+                  <div class="card__oldPrace">27 000 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из комбинированного золота с бриллиантами
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring008.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">9 250 ₽</div>
+                  <div class="card__oldPrace">10 000</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из желтого золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring006.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">20 450 ₽</div>
+                  <div class="card__oldPrace">36 450 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 1,85 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring005.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">12 990 ₽</div>
+                  <div class="card__oldPrace">28 800 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Помолвочное кольцо из белого золота с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 0,94 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring008.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">9 250 ₽</div>
+                  <div class="card__oldPrace">10 000</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из желтого золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring007.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">18 750 ₽</div>
+                  <div class="card__oldPrace">27 000 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из комбинированного золота с бриллиантами
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="winter-new">
+        <div class="container">
+          <div class="winter-new__inner">
+            <div class="winter-new__title">зимние новинки 2020</div>
+            <div class="winter-new__sale">время скидок</div>
+            <a class="winter-new__link" href="#">Смотреть новинки</a
+            ><img
+              class="winter-new__img"
+              src="./assets/imgs/ringPhone1.png"
+              alt="ring1"
+            /><img
+              class="winter-new__img2"
+              src="./assets/imgs/ringPhone2.png"
+              alt="ring2"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="catalog-product">
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring005.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">12 990 ₽</div>
+                  <div class="card__oldPrace">28 800 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Помолвочное кольцо из белого золота с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 0,94 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring006.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">20 450 ₽</div>
+                  <div class="card__oldPrace">36 450 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 1,85 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring007.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">18 750 ₽</div>
+                  <div class="card__oldPrace">27 000 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из комбинированного золота с бриллиантами
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring008.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">9 250 ₽</div>
+                  <div class="card__oldPrace">10 000</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из желтого золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring006.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">20 450 ₽</div>
+                  <div class="card__oldPrace">36 450 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 1,85 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring005.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">12 990 ₽</div>
+                  <div class="card__oldPrace">28 800 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Помолвочное кольцо из белого золота с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Белое золото, 585° Вставки: бриллианты Вес: 0,94 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring008.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">9 250 ₽</div>
+                  <div class="card__oldPrace">10 000</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из желтого золота с родированием с бриллиантом
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+            <div class="card">
+              <a class="card__link" href="#">
+                <img
+                  class="card__img"
+                  src="./assets/imgs/ring007.png"
+                  alt="товар"
+                />
+                <svg class="icon card__like">
+                  <use xlink:href="./assets/imgs/sprite.svg#heart"></use>
+                </svg>
+                <div class="card__content">
+                  <div class="card__newPrace">18 750 ₽</div>
+                  <div class="card__oldPrace">27 000 ₽</div>
+                  <div class="card__stars">
+                    <img src="./assets/imgs/stars.png" alt="stars" />
+                  </div>
+                  <p class="card__text">
+                    Кольцо из комбинированного золота с бриллиантами
+                  </p>
+                  <p class="card__description">
+                    Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г
+                  </p>
+                  <a class="card__bottom" href="#">
+                    <div class="card__btn">в корзину</div></a
+                  >
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="catalog-pages">
+        <ul>
+          <li class="catalog-pages__link"><a href="#">1</a></li>
+          <li class="catalog-pages__link"><a href="#">2</a></li>
+          <li class="catalog-pages__link"><a href="#">3</a></li>
+          <li class="catalog-pages__link"><a href="#">4</a></li>
+          <li class="catalog-pages__link"><a href="#">5</a></li>
+          <li class="catalog-pages__arrow">
+            <a href="#"
+              ><img src="./assets/imgs/rightArrow.svg" alt="rightarrow"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer">
+            <a class="footer__logo" href="index.html"
+              ><img src="./assets/imgs/footerLogo.png" alt="footerLogo"
+            /></a>
+            <div class="footer-about">
+              <ul>
+                <li><a class="footer-about__link" href="#"> О компании</a></li>
+                <li>
+                  <a class="footer-about__link" href="catalog.html"
+                    >Ювелирный каталог</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-about__link" href="#">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a class="footer-about__link" href="news.html">Новости</a>
+                </li>
+                <li><a class="footer-about__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-products">
+              <div class="footer-products__model">
+                <ul>
+                  <li><a class="footer-products__link" href="#">Кольца</a></li>
+                  <li><a class="footer-products__link" href="#">Серьги</a></li>
+                  <li>
+                    <a class="footer-products__link" href="#">Подвески</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-products__material">
+                <ul>
+                  <li><a class="footer-products__link" href="#">Золото</a></li>
+                  <li><a class="footer-products__link" href="#">Серебро</a></li>
+                  <li>
+                    <a class="footer-products__link" href="#">Бриллианты</a>
+                  </li>
+                  <li>
+                    <a class="footer-products__link" href="#">Коллекции</a>
+                  </li>
+                  <li><a class="footer-products__link" href="#">Подарки</a></li>
+                </ul>
+              </div>
+              <div class="footer-products__rock">
+                <a class="footer-products__link" href="#">Камни</a>
+              </div>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-contact__title">Контакты</div>
+              <div class="footer-contact__text">
+                <p>
+                  г. Москва, БЦ «Синица Плаза» 2-я ул. Синичкина, 9 а, стр. 7
+                </p>
+                <a href="tel:">тел.: +7 499 372-60-84</a>
+              </div>
+              <div class="footer-info">
+                <a class="footer-info__tel" href="tel:">+7 499 391 45 79 </a>
+              </div>
+              <div class="footer-info">
+                <a class="footer-info__insta" href="https://www.instagram.com"
+                  >Инстаграм</a
+                >
+              </div>
+              <div class="footer-info__write">
+                <a class="footer-info__link" href="#">Написать нам</a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">© 2021 ДЕМЕТРА-САПФАЕРР</div>
+        </div>
+      </footer>
+    </div>
+    <!-- Модальные окна    -->
+    <!--include ../components/modals-->
+    <script src="./assets/js/vendors.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- Виджет для перехода по всем страницам проекта-->
+    <div class="pages-viget">
+      <div class="pages-viget__menu">
+        <ul class="pages-viget__menu-list">
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="">ТЗ</a>
+          </li>
+          <li class="pages-viget__menu-item">
+            <a
+              class="pages-viget__menu-link"
+              href="https://www.figma.com/file/gflV0lUFNqsE9PG2FwGbb2/DSJ-Desktop-(Copy)-(Copy)"
+              >Дизайн</a
+            >
+          </li>
+          <br />
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./index.html">Главная</a>
+          </li>
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./news.html">Новости</a>
+          </li>
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./catalog.html">Каталог</a>
+          </li>
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./about.html">О компании</a>
+          </li>
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./delivery.html"
+              >Доставка</a
+            >
+          </li>
+          <li class="pages-viget__menu-item">
+            <a class="pages-viget__menu-link" href="./contacts.html"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pages-viget__btn"></div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        const vigetWrap = $(".pages-viget");
+        const vigetBtn = $(".pages-viget__btn");
+
+        vigetBtn.on("click", function () {
+          vigetWrap.toggleClass("open");
+        });
+
+        $(document).on("click", function (e) {
+          if (!$(e.target).closest(vigetWrap).length) {
+            vigetWrap.removeClass("open");
+          }
+          e.stopPropagation();
+        });
+      });
+    </script>
+    <style type="text/css">
+      .pages-viget {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 350px;
+        transform: translate3d(-100%, 0, 0);
+        z-index: 2000;
+        transition: all ease 0.4s;
+      }
+      .pages-viget.open {
+        transform: translate(0, 0);
+        transition: all ease 0.4s;
+      }
+      .pages-viget__menu {
+        height: 100%;
+        padding: 15px;
+        background-color: #fff;
+        border: 3px solid #84828d;
+        border-left: 0;
+      }
+      .pages-viget__menu-item {
+        margin: 0 0 4px;
+        padding: 0 0 3px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .pages-viget__menu-link {
+        font-size: 13px;
+        line-height: 1.2;
+      }
+      .pages-viget__btn {
+        position: fixed;
+        top: 80px;
+        right: -43px;
+        width: 40px;
+        height: 40px;
+        background-color: #e92e27;
+        cursor: pointer;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg fill='%23fff' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 490 490' style='enable-background:new 0 0 490 490;' xml:space='preserve'%3E%3Cg id='line_2_'%3E%3Cpath d='M436.406,76.563L367.5,0H53.594v490h382.812V76.563z M405.781,459.375H84.219V30.625h269.531v60.806h52.032V459.375z'/%3E%3Ccircle cx='153.232' cy='173.399' r='28.144'/%3E%3Crect x='221.373' y='158.102' width='143.539' height='30.625'/%3E%3Ccircle cx='153.232' cy='245.475' r='28.144'/%3E%3Crect x='221.373' y='230.162' width='143.539' height='30.625'/%3E%3Ccircle cx='153.232' cy='317.535' r='28.144'/%3E%3Crect x='221.373' y='302.223' width='143.539' height='30.625'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </body>
+</html>

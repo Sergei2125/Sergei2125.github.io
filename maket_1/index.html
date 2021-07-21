@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav__fixed js-nav-fixed">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link active" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Наши проекты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__content">
+        <p class="header__studio">Передовая IT студия</p>
+        <h1 class="header__h1">
+          Мы создаем легкие решения сложных задач и проблем
+        </h1>
+        <div class="header__btn">
+          <a class="btn" href="#">Наши проекты</a>
+        </div>
+      </div>
+    </header>
+    <section class="design">
+      <div class="container">
+        <div class="design__header">
+          <h2 class="h2 design__title">
+            Мы создаем мобильные приложения для крупных корпораций
+          </h2>
+          <p class="design__content">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века.
+          </p>
+        </div>
+        <div class="design__create">
+          <div class="design-website">
+            <div class="design-website__picture">
+              <p class="design-website__img">
+                <img src="./assets/images/website.svg" alt="website" />
+              </p>
+            </div>
+            <div class="design-website__content">
+              <h3 class="h3 design-website__title">Создание сайтов</h3>
+              <p class="design-website__text">
+                Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                вэб-дизайне.
+              </p>
+            </div>
+          </div>
+          <div class="design-website">
+            <div class="design-website__picture">
+              <p class="design-website__img">
+                <img src="./assets/images/website.svg" alt="website" />
+              </p>
+            </div>
+            <div class="design-website__content">
+              <h3 class="h3 design-website__title">Создание сайтов</h3>
+              <p class="design-website__text">
+                Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                вэб-дизайне.
+              </p>
+            </div>
+          </div>
+          <div class="design-website">
+            <div class="design-website__picture">
+              <p class="design-website__img">
+                <img src="./assets/images/website.svg" alt="website" />
+              </p>
+            </div>
+            <div class="design-website__content">
+              <h3 class="h3 design-website__title">Создание сайтов</h3>
+              <p class="design-website__text">
+                Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                вэб-дизайне.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="disign__btn">
+          <a class="btn" href="#">Все услуги</a>
+        </div>
+      </div>
+    </section>
+    <section class="standart">
+      <div class="container">
+        <div class="standart__inner">
+          <!-- №2 (исправил?)ИПРАВИТЬ для  standart-text и standart__img
+                лучше задать какую-то max-width в %, иначе они могут начать делить
+                ширину отталкиваясь от своего контента, а должны примерно пополам-->
+          <div class="standart__content">
+            <h2 class="h2 standart-text__h2">Высокие стандарты разработки</h2>
+            <p class="standart-text__p">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. стандартной "рыбой" для текстов на
+              латинице с начала XVI века.
+            </p>
+            <a class="standart-text__a" href="#">Подробнее о компании</a>
+          </div>
+          <div class="standart__content">
+            <!-- №2 (исправил?)ИПРАВИТЬ для картинки лучше задать max-width: 100%
+                    чтобы при адаптиве она не лезла за границы своего блока -->
+            <img
+              class="standart__img"
+              src="./assets/images/laptop.png"
+              alt="picture"
+            />
+          </div>
+        </div>
+        <div class="standart__box">
+          <div class="standart-item">
+            <!-- №2(исправил?) ИПРАВИТЬ точки потерялись,
+                    у меня картинки не отображаются(
+                    http://prntscr.com/10eb1n4 ????
+                    обернуть и поровнять, число и картинка
+                    должны идти по одной линии -->
+            <div class="service-item__inner">
+              <img src="./assets/images/item.svg" alt="picture item" />
+              <span class="standart-item__span">125</span>
+            </div>
+            <p class="standart-item__p">Our projects</p>
+          </div>
+          <div class="standart-item">
+            <div class="service-item__inner">
+              <img src="./assets/images/item.svg" alt="picture item" />
+              <span class="standart-item__span">125</span>
+            </div>
+            <p class="standart-item__p">Our projects</p>
+          </div>
+          <div class="standart-item">
+            <div class="service-item__inner">
+              <img src="./assets/images/item.svg" alt="picture item" />
+              <span class="standart-item__span">125</span>
+            </div>
+            <p class="standart-item__p">Our projects</p>
+          </div>
+          <div class="standart-item">
+            <div class="service-item__inner">
+              <img src="./assets/images/item.svg" alt="picture item" />
+              <span class="standart-item__span">125</span>
+            </div>
+            <p class="standart-item__p">Our projects</p>
+          </div>
+          <div class="standart-item">
+            <div class="service-item__inner">
+              <img src="./assets/images/item.svg" alt="picture item" />
+              <span class="standart-item__span">125</span>
+            </div>
+            <p class="standart-item__p">Our projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <div class="service__header">
+          <h2 class="h2 service__title">
+            Наши работы, на которых мы специализируемся
+          </h2>
+          <a class="btn" href="#">Все услуги</a>
+        </div>
+        <div class="service__content">
+          <div class="service-item">
+            <img
+              class="service-item__img"
+              src="./assets/images/desktop.png"
+              alt="picture desktop"
+            />
+            <h3 class="service-item__h3">
+              <span class="service-item__span">01.</span>
+              <span class="service-item__span">Исследование и упаковка</span>
+            </h3>
+            <p class="service-item__p">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <a class="service-item__a" href="#">Подробнее</a>
+          </div>
+          <div class="service-item">
+            <img
+              class="service-item__img"
+              src="./assets/images/desktop.png"
+              alt="picture desktop"
+            />
+            <h3 class="service-item__h3">
+              <span class="service-item__span">01.</span>
+              <span class="service-item__span">Исследование и упаковка</span>
+            </h3>
+            <p class="service-item__p">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <a class="service-item__a" href="#">Подробнее</a>
+          </div>
+          <div class="service-item">
+            <img
+              class="service-item__img"
+              src="./assets/images/desktop.png"
+              alt="picture desktop"
+            />
+            <h3 class="service-item__h3">
+              <span class="service-item__span">01.</span>
+              <span class="service-item__span">Исследование и упаковка</span>
+            </h3>
+            <p class="service-item__p">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <a class="service-item__a" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="container">
+        <h2 class="h2 project__title">Наши проекты</h2>
+        <p class="project__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+          латинице с начала XVI века.
+        </p>
+        <div class="project__content">
+          <img src="./assets/images/content.png" alt="picture content" />
+          <img src="./assets/images/content.png" alt="picture content" />
+          <img src="./assets/images/content.png" alt="picture content" />
+          <img src="./assets/images/content.png" alt="picture content" />
+        </div>
+        <a class="btn" href="">Все проекты</a>
+      </div>
+    </section>
+    <section class="work-video">
+      <h2 class="h2 work-video__title">Видео о нашей работе</h2>
+      <!-- №2(исправил?) ИСПРАВИТЬ здесь что-то пошло не так с аттрибутами -->
+      <p class="h2 work-video__text">Просто посмотрите, как мы работаем</p>
+      <div class="work-video__img">
+        <iframe
+          width="760px"
+          height="430px"
+          src="https://www.youtube.com/embed/XjZlLcBCAE0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section class="email">
+      <div class="container--small">
+        <h3 class="email__title">Подпишитесь на нашу рассылку</h3>
+        <p class="email__text">
+          Полезные статьи, акции, новости - получите все это сейчас!
+        </p>
+        <form class="form">
+          <input class="form__input" type="text" placeholder="Ваш e-mail" />
+          <button class="form__button">Подписаться</button>
+        </form>
+        <p class="email__article">
+          Мы не шлем спам, и передаем никому ваши данные.
+        </p>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__content">
+          <div>
+            <h3 class="info__title">Контактная информация</h3>
+            <div class="info__item">
+              <!-- №2(исправил) сюда лучше ссылку, пользователю
+                        полезнее будет не просто видеть почту, но и удобнее с
+                        ней работать,
+                        Пример, href="mailto:" для почты,
+                        href="tel:" для телефона-->
+              <a class="info__mail" href="mailto:test@test.ru">test@test.ru</a>
+            </div>
+            <div class="info__item">
+              <a class="info__phone" href="tel:">+8 777 555 66 99</a>
+            </div>
+            <div class="info__item">
+              <p class="info__adress">Москва, Бульвар Ленина 33</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="info__title">Основные ссылки</h3>
+            <ul>
+              <li class="info__item">
+                <a class="info__link" href="">Главная</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">Наши проекты</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">Наши услуги</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="info__title">Наши проекты</h3>
+            <ul>
+              <li class="info__item">
+                <a class="info__link" href="">РосНано</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">Сколково</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">Проект “Восток”</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="">ТЭЦ Калининграда</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="info__title">Социальные сети</h3>
+            <ul>
+              <li class="info__item">
+                <a class="info__link" href="https://vk.com">VK.com</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="#">Instagram</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="#">Facebook</a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">(с) 2019. Все права защищены.</footer>
+    <script>
+      window.addEventListener("scroll", function (event) {
+        // а если понадобится плавный переход? лучше вешать/удалять класс(состояние)
+        // и изменять свойства css в зависимости от наличия отсутсвия класса(т.е. описывать состояние).
+        // + совет не для React но в принципе - лучше не вешать скрипты
+        // на классы для стилей, если нужно зацепить элемент лучше создать отдельный класс или id
+
+        // let div=document.querySelector('.nav__fixed');
+        // if (pageYOffset<5) {
+        //     div.style.background = 'none';
+        // } else div.style.background = '#999999';
+
+        let nav = document.querySelector(".js-nav-fixed");
+        if (pageYOffset < 5) {
+          nav.classList.remove("is-fixed"); // удаляет у элемента nav класс "is-fixed"
+        } else nav.classList.add("is-fixed"); // добавляет к элементу nav класс "is-fixed"
+      });
+    </script>
+  </body>
+</html>
