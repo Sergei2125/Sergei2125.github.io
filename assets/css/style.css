@@ -29,6 +29,7 @@ body {
   margin: 10px;
   border: 1px solid rgb(180, 177, 177, 0.1);
   box-shadow: 5px 10px 18px #888888;
+  background-color: #fff;
 }
 .content__item:hover {
   box-shadow: 5px 10px 18px #4566d1;
@@ -36,7 +37,6 @@ body {
 }
 .content__link {
   text-decoration: none;
-  text-align: center;
   color: #000;
 }
 .content__title {
@@ -44,7 +44,16 @@ body {
   font-size: 30px;
   padding: 20px 0;
   color: rgb(12, 66, 10);
-  background-color: #fff;
+}
+.content__list {
+  list-style: inherit;
+  padding: 5px 5px 5px 20px;
+}
+.content__list:last-of-type {
+  padding-bottom: 20px;
+}
+.content__list-item {
+  padding: 10px 0 0 0;
 }
 .content__img {
   height: 300px;
