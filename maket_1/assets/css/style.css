@@ -4,545 +4,552 @@
 /*https://www.figma.com/file/gVc8u7tZSj9Cawgo5XiNiz/Templates-%234.-More-on-Figma.info-(Copy)?node-id=0%3A1*/
 
 html {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.container{
-    width: 1144px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container {
+  width: 1144px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-.container--small{
-    width: 730px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container--small {
+  width: 730px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-.header{
-    background-image: url(../images/headerImage.jpg);
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+  background-image: url(../images/headerImage.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* переносим стилизацию из скрипта сюда (описываем обычное состояние) */
-.nav__fixed{     /*задаем фиксированную позицию меню навигации*/
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    border-bottom: 1px solid #A1A1A1;
-    z-index: 2;
+.nav__fixed {
+  /*задаем фиксированную позицию меню навигации*/
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  border-bottom: 1px solid #a1a1a1;
+  z-index: 2;
 
-    /* забегая вперед плавность перехода */
-    transition: background-color ease 0.3s;
+  /* забегая вперед плавность перехода */
+  transition: background-color ease 0.3s;
 }
 /* переносим стилизацию из скрипта сюда,
 (описываем состояние при скролле) */
 .nav__fixed.is-fixed {
-    background: #c9c5c5;
+  background: #c9c5c5;
 }
 /*позиционирование меню + отступы*/
-.nav {     
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 0;
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
 }
 /*.nav_item{}*/
 /* #2 ИСПРАВИТЬ ссылка по умолчанию display:inline,
  для задания корректных отступов нужно изменить display на inline-block,
  сейчас они работаю криво - только для кнопки но не для внешних блоков */
 .nav__link {
-    padding: 20px 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-    margin-left: 20px;
-    color: #FFF;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #fff;
 }
 /*задаем событие наведения мыши на элементы меню*/
-.nav__link.active, 
-.nav__link:hover{
-    border-bottom: 1px solid #FFF;
+.nav__link.active,
+.nav__link:hover {
+  border-bottom: 1px solid #fff;
 }
 .header__content {
-    text-align: center;
+  text-align: center;
 }
 .header__studio {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 .header__h1 {
-    display: inline-block;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 64px;
-    max-width: 829px;
-    padding: 20px 0px 50px;
-    color: #FFF;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  max-width: 829px;
+  padding: 20px 0px 50px;
+  color: #fff;
 }
-.header__btn{}
+.header__btn {
+}
 /*задаем общий класс для большинства кнопок-ссылок на странице*/
-.btn{   
-    display: inline-block;
-    text-decoration: none;
-    padding: 13px 37px 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #4985FF;
-    color: #FFF;
-    border-radius: 30px;
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 37px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #4985ff;
+  color: #fff;
+  border-radius: 30px;
 }
 /*событие при наведении мыши на кнопку-ссылку*/
-.btn:hover,  
-.btn:focus{
-    opacity: 0.8;
-    transition: 0.3s;
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  transition: 0.3s;
 }
-.header__link {}
+.header__link {
+}
 
 /*Начинается следующая секция design*/
 .design {
-    margin: 110px 0px 105px;
+  margin: 110px 0px 105px;
 }
 .design__header {
-    text-align: center;
+  text-align: center;
 }
 .h2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 53px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
 }
-.design__title{
-    display: inline-block;
-    max-width: 739px;
-    color: #323232;
+.design__title {
+  display: inline-block;
+  max-width: 739px;
+  color: #323232;
 }
 .design__content {
-    padding: 50px 0px 70px;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 25px;
-    max-width: 730px;
+  padding: 50px 0px 70px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 730px;
 
-    color: #999;
+  color: #999;
 }
-.design__create{
-    padding-bottom: 55px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.design__create {
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.design-website{
-    display: flex;
-    align-items: flex-start;
-    /*(исправил) #2 ИСПРАВИТЬ лучше задать в % 
+.design-website {
+  display: flex;
+  align-items: flex-start;
+  /*(исправил) #2 ИСПРАВИТЬ лучше задать в % 
     max-width: 353px;*/
-    max-width: 30%;
+  max-width: 30%;
 }
-.design-website__picture{
-    border: 1px solid #E0E0E0;
-    border-radius: 50%;
-    padding: 10px;
+.design-website__picture {
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 10px;
 }
-.design-website__img{
-    border: 1px solid #4985FF;
-    border-radius: 50%;
-    padding: 25px;
+.design-website__img {
+  border: 1px solid #4985ff;
+  border-radius: 50%;
+  padding: 25px;
 }
-.design-website__content{
-    padding-left: 15px;
+.design-website__content {
+  padding-left: 15px;
 }
-.h3{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+.h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 
-    color: #000;
+  color: #000;
 }
-.design-website__title{
-    padding: 46px 0px 12px;
+.design-website__title {
+  padding: 46px 0px 12px;
 }
-.design-website__text{
-    font-size: 14px;
-    line-height: 22px;
-    color: #999;
+.design-website__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #999;
 }
 .disign__btn {
-    text-align: center ;
+  text-align: center;
 }
 
 /*Начинается следующая секция standart*/
-.standart{
-    background-color: #F6F6F8;
+.standart {
+  background-color: #f6f6f8;
 }
-.standart__inner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 0px 90px;
-    border-bottom: 1px solid #E0E0E0;
+.standart__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0px 90px;
+  border-bottom: 1px solid #e0e0e0;
 }
-.standart-text{}
-.standart-text__h2{}
-.standart-text__p{
-    font-size: 16px;
-    line-height: 25px;
-    padding: 40px 0px 30px;
-    color: #999;
+.standart-text {
 }
-.standart-text__a{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+.standart-text__h2 {
+}
+.standart-text__p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 40px 0px 30px;
+  color: #999;
+}
+.standart-text__a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 
-    color: #4985FF;
+  color: #4985ff;
 }
-.standart-text__a:hover{
-    opacity: 0.7;
-    transition: 0.2s;
+.standart-text__a:hover {
+  opacity: 0.7;
+  transition: 0.2s;
 }
-.standart__content { /* вроде так?*/
-    max-width: 50%;
+.standart__content {
+  /* вроде так?*/
+  max-width: 50%;
 }
-.standart__img{
-   max-width: 100%;
+.standart__img {
+  max-width: 100%;
 }
-.standart__box{
-    display: flex;
-    justify-content: space-between;
-    padding: 70px;
-    flex-wrap: wrap;
+.standart__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  flex-wrap: wrap;
 }
-.standart-item{
-    display: flex;
-    flex-direction: column;
-    /* #2 ИСПРАВИТЬ лучше в % */
-    flex: 0 1 20%;
-    max-width: 20%;
+.standart-item {
+  display: flex;
+  flex-direction: column;
+  /* #2 ИСПРАВИТЬ лучше в % */
+  flex: 0 1 20%;
+  max-width: 20%;
 }
-.service-item__inner{
-    display: flex;
+.service-item__inner {
+  display: flex;
 }
-.standart-item__span{
-    padding-left: 20px;
-    font-size: 36px;
-    line-height: 53px;
-    color: #000;
+.standart-item__span {
+  padding-left: 20px;
+  font-size: 36px;
+  line-height: 53px;
+  color: #000;
 }
-.standart-item__p{
-    font-size: 16px;
-    line-height: 25px;
+.standart-item__p {
+  font-size: 16px;
+  line-height: 25px;
 
-    color: #999;
+  color: #999;
 }
 
-    /*Начало новой секции service*/
-.service{
-    background-image: linear-gradient(#504DC2 50%, #fff 50%);
-    padding-bottom: 85px;
-    /*(исправил) лучше не фиксировать высоту и добивать отступом,
+/*Начало новой секции service*/
+.service {
+  background-image: linear-gradient(#504dc2 50%, #fff 50%);
+  padding-bottom: 85px;
+  /*(исправил) лучше не фиксировать высоту и добивать отступом,
     при изменении контента верстка сломается.
     лучше часть фона сделать либо псевдоэлементом(before/after)
     либо посмотреть в сторону свойства background-image: linear-gradient(...) */
 }
-.service__header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* #2(исправил) ИСПРАВИТЬ излишне, можно сократить запись padding */
-    padding: 100px 0px 70px;
+.service__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* #2(исправил) ИСПРАВИТЬ излишне, можно сократить запись padding */
+  padding: 100px 0px 70px;
 }
-.service__title{
-    color: #FFF;
-    max-width: 50%;
+.service__title {
+  color: #fff;
+  max-width: 50%;
 }
-.service__content{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #E0E0E0;
-    padding-bottom: 85px;
-/*задаем отрицательные отступы для внутренних блоков .service-item */
-    margin: 0px -15px; 
+.service__content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 85px;
+  /*задаем отрицательные отступы для внутренних блоков .service-item */
+  margin: 0px -15px;
 }
-.service-item{
-    /* #2 ИСПРАВИТЬ излишне, flex не нужен
+.service-item {
+  /* #2 ИСПРАВИТЬ излишне, flex не нужен
     здесь поток и так сверху вниз, а
     чтобы картинка стала на всю ширину блока
     достаточно width: 100% для нее */
-    display: flex;
-    flex-direction: column;
-    /*задаем отступы*/
-    margin: 0px 15px; 
-    max-width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  /*задаем отступы*/
+  margin: 0px 15px;
+  max-width: 33.3333%;
 }
-.service-item__img{}
-.service-item__h3{
-    padding: 30px 0px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+.service-item__img {
+}
+.service-item__h3 {
+  padding: 30px 0px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 
-    color: #000;
+  color: #000;
 }
-.service-item__span:first-child{
-    color: #4985FF;
+.service-item__span:first-child {
+  color: #4985ff;
 }
-.service-item__p{
-    font-size: 16px;
-    line-height: 25px;
+.service-item__p {
+  font-size: 16px;
+  line-height: 25px;
 
-    color: #999;
+  color: #999;
 }
-.service-item__a{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    /* #2 ИСПРАВИТЬ ссылка по умолчанию display:inline
+.service-item__a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* #2 ИСПРАВИТЬ ссылка по умолчанию display:inline
      и нормально работать с padding не будет,
       исправить на inline-block*/
-    padding-top: 30px;
+  padding-top: 30px;
 
-    color: #4985FF;
+  color: #4985ff;
 }
-.service-item__a:hover{
-    opacity: 0.6;
-    transition: 0.2s;
+.service-item__a:hover {
+  opacity: 0.6;
+  transition: 0.2s;
 }
 
 /*Начало новой секции project*/
-.project{
-    text-align: center;
-    background-color: #F6F6F8;
-    padding: 100px 0px 130px;
+.project {
+  text-align: center;
+  background-color: #f6f6f8;
+  padding: 100px 0px 130px;
 }
-.project__title{}
-.project__text{
-    display: inline-block;
-    padding: 50px 0px 70px;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: center;
-    /*задаем ширину тескта в процентах*/
-    width: 65%;       
+.project__title {
+}
+.project__text {
+  display: inline-block;
+  padding: 50px 0px 70px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  /*задаем ширину тескта в процентах*/
+  width: 65%;
 
-    color: #999;
+  color: #999;
 }
-.project__content{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px;
+.project__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 /*Начало новой секции work-video*/
-.work-video{
-    position: relative;
-   
-    background-image: url(./../images/work.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-/* в этой секции допустимо фиксануть высоту (570 надо разобраться???)*/
-    height: 570px;
-    margin-bottom: 165px;
-    
-    text-align: center;
-    color: #FFF;
+.work-video {
+  position: relative;
+
+  background-image: url(./../images/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* в этой секции допустимо фиксануть высоту (570 надо разобраться???)*/
+  height: 570px;
+  margin-bottom: 165px;
+
+  text-align: center;
+  color: #fff;
 }
-.work-video__title{
-    padding: 70px 0px 30px;
+.work-video__title {
+  padding: 70px 0px 30px;
 }
-.work-video__text{
-    font-size: 16px;
-    line-height: 25px;
+.work-video__text {
+  font-size: 16px;
+  line-height: 25px;
 }
-.work-video__img{
-    position: absolute;
-    top:35%;
-    left:50%;
-    transform:translate(-50%); 
-    /*Сдвигает элемент по горизонтали(нашу куртинку видео на 50% от ее длины) 
+.work-video__img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  /*Сдвигает элемент по горизонтали(нашу куртинку видео на 50% от ее длины) 
     на указанное значение. Положительное значение сдвигает вправо, отрицательное влево.*/
-    /*top: 200px;
+  /*top: 200px;
     left: 30%;*/
-    padding-bottom: 85px;
-    border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 85px;
+  border-bottom: 1px solid #e0e0e0;
 }
 /*Начало новой секции email*/
-.email{
-    padding: 85px 0px;
-    text-align: center;
+.email {
+  padding: 85px 0px;
+  text-align: center;
 }
-.email__title{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    padding-bottom: 20px;
+.email__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 20px;
 
-    color: #000;
+  color: #000;
 }
-.email__text{
-    font-size: 16px;
-    line-height: 25px;
-    text-align: center;
+.email__text {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
 
-    color: #999;
+  color: #999;
 }
-.form{
-    margin: 30px 0px 35px;
-    display: flex;
-    justify-content: center;
-    
+.form {
+  margin: 30px 0px 35px;
+  display: flex;
+  justify-content: center;
 }
-.form__input{
-    box-shadow: 0 0 10px #999;
-    border: none;
-    border-radius: 25px 0px 0px 25px;
-    width: 269px;
-    padding-left: 30px;
-    font-size: 13px;
-    line-height: 21px;
+.form__input {
+  box-shadow: 0 0 10px #999;
+  border: none;
+  border-radius: 25px 0px 0px 25px;
+  width: 269px;
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 21px;
 
-    color: #999;
+  color: #999;
 }
-.form__button{
-    padding: 13px 36px 15px 26px;
-    background-color: #4985FF;
-    border: none;
-    box-shadow: 0 0 10px #999;
-    width: 190px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 0px 25px 25px 0px;
+.form__button {
+  padding: 13px 36px 15px 26px;
+  background-color: #4985ff;
+  border: none;
+  box-shadow: 0 0 10px #999;
+  width: 190px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 0px 25px 25px 0px;
 
-    color: #FFF;
+  color: #fff;
 }
-.form__button:hover{
-    opacity: 0.9;
+.form__button:hover {
+  opacity: 0.9;
 }
 
-.email__article{
-    font-size: 13px;
-    line-height: 21px;
-    text-align: center;
+.email__article {
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
 
-    color: #999;
+  color: #999;
 }
 /*Начало следующей секции info*/
-.info{
-    background-color: #F6F6F8;
+.info {
+  background-color: #f6f6f8;
 }
-.info__content{
-    padding: 70px 0px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #E0E0E0;
-    
+.info__content {
+  padding: 70px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
 }
-.info__title{
-    padding-bottom: 5px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+.info__title {
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 
-    color: #000;
+  color: #000;
 }
-.info__item{
-    padding-top: 30px;
-    position: relative;
+.info__item {
+  padding-top: 30px;
+  position: relative;
 }
-.info__mail{
-    padding-left: 35px;
-    text-decoration: none;
-    font-size: 14px;
+.info__mail {
+  padding-left: 35px;
+  text-decoration: none;
+  font-size: 14px;
 
-    position: relative;
+  position: relative;
 
-    color: #999;
+  color: #999;
 }
 /*добавляем иконки*/
-.info__mail:before{    
-    content: "";
-    background-image: url(./../images/email.svg);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
+.info__mail:before {
+  content: "";
+  background-image: url(./../images/email.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  color: red;
 }
-.info__phone{
-    padding-left: 35px;
-    font-size: 14px;
-    text-decoration: none;
+.info__phone {
+  padding-left: 35px;
+  font-size: 14px;
+  text-decoration: none;
 
-    color: #999;
+  color: #999;
 }
-.info__phone:before{
-    content: "";
-    background-image: url(./../images/call.svg);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
+.info__phone:before {
+  content: "";
+  background-image: url(./../images/call.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
 }
-.info__adress{
-    padding-left: 35px;
-    font-size: 14px;
+.info__adress {
+  padding-left: 35px;
+  font-size: 14px;
 
-    color: #999;
+  color: #999;
 }
-.info__adress:before{
-    content: "";
-    background-image: url(./../images/placeholder.svg);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
+.info__adress:before {
+  content: "";
+  background-image: url(./../images/placeholder.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
 }
 .info__phone:hover,
-.info__mail:hover{
-    color: #504DC2;
-    transition: 0.3s;
+.info__mail:hover {
+  color: #504dc2;
+  transition: 0.3s;
 }
-.info__link{
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 22px;
-    text-decoration: none;
+.info__link {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
 
-    color: #999;
+  color: #999;
 }
-.info__link:before{
-    content: "";
-    background-image: url(./../images/right-arrow.svg);
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 0;
-    top: 35px;
+.info__link:before {
+  content: "";
+  background-image: url(./../images/right-arrow.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 35px;
 }
 .info__link:hover,
-.info__link:focus{
-    color: #504DC2;
-    transition: 0.3s;
+.info__link:focus {
+  color: #504dc2;
+  transition: 0.3s;
 }
-.footer{
-    padding: 30px 0px;
-    font-size: 13px;
-    line-height: 21px;
-    text-align: center;
-    background-color: #F6F6F8;
-    color: #999;
+.footer {
+  padding: 30px 0px;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #f6f6f8;
+  color: #999;
 }
 /*@media (max-width: 1200px) { 
     /*сработает, если шарина экрана 1200px и меньше
@@ -562,5 +569,3 @@ html {
     }
 }
 */
-
-
