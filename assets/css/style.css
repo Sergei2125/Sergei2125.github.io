@@ -29,6 +29,7 @@ body {
 .content__item {
   display: flex;
   flex-direction: column;
+  width: 400px;
   justify-content: space-between;
   margin: 10px;
   border: 1px solid rgb(180, 177, 177, 0.1);
@@ -87,6 +88,7 @@ body {
 }
 .content__img {
   height: 300px;
+  max-width: 400px;
 }
 .githubBox {
   text-align: center;
